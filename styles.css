@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1c2534;
+  height: 45rem;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 55rem;
+}
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main,
+main i {
+  font-size: 6.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+main a i {
+  animation: float 4s ease-in-out infinite;
+}
+
+a .fa-square-facebook {
+  color: #1877f2;
+  animation-delay: 5.5s;
+  text-decoration: none;
+}
+
+a .fa-square-whatsapp {
+  color: #25d366;
+  animation-delay: 2s;
+  text-decoration: none;
+}
+
+a .fa-square-github {
+  color: #000000;
+  text-decoration: none;
+  animation-delay: 3.5s;
+}
+a .fa-discord {
+  color: #eeeeee;
+  text-decoration: none;
+  animation-delay: 1s;
+}
+a .fa-instagram {
+  color: #b52828;
+  text-decoration: none;
+  animation-delay: 1s;
+  fill: brown;
+}
+a .fa-at {
+  color: #000000;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3.25rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+a .fa-square-github .tooltip {
+  tooltip-color: rgb(187, 51, 51);
+}
+footer::before {
+  content: "";
+  position: absolute;
+  height: 0.15rem;
+  background-color: #b52828;
+
+  width: 100%;
+}
+footer {
+  color: #ffffff;
+  position: absolute;
+  margin-top: 55.95rem;
+  background-color: transparent;
+  width: 100%;
+  height: 0.5rem;
+}
+footer p {
+  font-size: 1.15rem;
+  text-align: center;
+  padding-top: 0.25rem;
+}
